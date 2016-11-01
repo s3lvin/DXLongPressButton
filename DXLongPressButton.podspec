@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A subclass of UIButton that includes UILongPressEvent and IBInspectable long press duration
+A subclass of UIButton that includes UILongPressEvent and IBInspectable long press duration. Enjoy using the UILongPressEvent as you use other UIControlEvents. Add and remove targets programmatically for UILongPressEvent. Targets are not retained. 
                        DESC
 
   s.homepage         = 'https://github.com/s3lvin/DXLongPressButton'
