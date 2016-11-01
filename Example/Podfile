@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DXLongPressButton_Example' do
+  pod 'DXLongPressButton', :path => '../'
+
+  target 'DXLongPressButton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
