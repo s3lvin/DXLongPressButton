@@ -1,0 +1,16 @@
+PODS:
+  - DXLongPressButton (0.1.0)
+
+DEPENDENCIES:
+  - DXLongPressButton (from `../`)
+
+EXTERNAL SOURCES:
+  DXLongPressButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DXLongPressButton: 525f39044ff1e2b15d395a16eee4bcee566b45f9
+
+PODFILE CHECKSUM: e13b7f9be6f6f8736c2c3999184b710949c4a038
+
+COCOAPODS: 1.1.1

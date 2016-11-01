@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9E2AF0F10CBF1E29EAADB85A /* Pods_DXLongPressButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1DBAF90FBB3F4CB31602B /* Pods_DXLongPressButton_Tests.framework */; };
+		AE3A6D131DC9174E00D152B1 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3A6D121DC9174E00D152B1 /* UIView+Toast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35EBFB15BAFDC25B5495D6D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		39FBDDBC2FD9A538A5F6075E /* DXLongPressButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DXLongPressButton.podspec; path = ../DXLongPressButton.podspec; sourceTree = "<group>"; };
+		35EBFB15BAFDC25B5495D6D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		39FBDDBC2FD9A538A5F6075E /* DXLongPressButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DXLongPressButton.podspec; path = ../DXLongPressButton.podspec; sourceTree = "<group>"; };
 		3B88B43051B23A2452972FB2 /* Pods-DXLongPressButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXLongPressButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DXLongPressButton_Example/Pods-DXLongPressButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4C60D09F47D74D95B14FBAB3 /* Pods-DXLongPressButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXLongPressButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DXLongPressButton_Tests/Pods-DXLongPressButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		598F88E3E3ED4FD6B8B355AC /* Pods-DXLongPressButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXLongPressButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DXLongPressButton_Example/Pods-DXLongPressButton_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,7 +65,9 @@
 		96E1DBAF90FBB3F4CB31602B /* Pods_DXLongPressButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXLongPressButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A29C8756DF5156F730CDADE2 /* Pods_DXLongPressButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXLongPressButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FAE7B3F602F1733F3106AC /* Pods-DXLongPressButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DXLongPressButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DXLongPressButton_Tests/Pods-DXLongPressButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BC7B506504E84D14B3D11668 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AE3A6D111DC9174E00D152B1 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		AE3A6D121DC9174E00D152B1 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		BC7B506504E84D14B3D11668 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 		6003F593195388D20070C39A /* Example for DXLongPressButton */ = {
 			isa = PBXGroup;
 			children = (
+				AE3A6D111DC9174E00D152B1 /* UIView+Toast.h */,
+				AE3A6D121DC9174E00D152B1 /* UIView+Toast.m */,
 				6003F59C195388D20070C39A /* DXAppDelegate.h */,
 				6003F59D195388D20070C39A /* DXAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -320,7 +325,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		8E79EE5212330F905E2C08E8 /* [CP] Copy Pods Resources */ = {
@@ -350,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D6561F98964AD17CD2661E59 /* [CP] Embed Pods Frameworks */ = {
@@ -390,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3A6D131DC9174E00D152B1 /* UIView+Toast.m in Sources */,
 				6003F59E195388D20070C39A /* DXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -516,6 +522,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DXLongPressButton/DXLongPressButton-Prefix.pch";
 				INFOPLIST_FILE = "DXLongPressButton/DXLongPressButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +539,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DXLongPressButton/DXLongPressButton-Prefix.pch";
 				INFOPLIST_FILE = "DXLongPressButton/DXLongPressButton-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

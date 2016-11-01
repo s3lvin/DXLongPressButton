@@ -1,0 +1,6 @@
+framework module DXLongPressButton {
+  umbrella header "DXLongPressButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
