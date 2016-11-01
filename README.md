@@ -11,6 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- iOS8 or Above
+- ARC
+
 ## Installation
 
 DXLongPressButton is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +25,7 @@ pod "DXLongPressButton"
 
 ## Author
 
-Selvin Jeyasigamani, selvin.jeyasigamani@invariatech.com
+S3lvin, mariaselvin@gmail.com
 
 ## License
 
