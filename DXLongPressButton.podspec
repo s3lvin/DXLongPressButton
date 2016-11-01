@@ -31,6 +31,6 @@ A subclass of UIButton that includes UILongPressEvent and IBInspectable long pre
 
   s.source_files = 'DXLongPressButton/Classes/**/*'
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
+  s.public_header_files = 'DXLongPressButton/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'CoreFoundation'
 end
